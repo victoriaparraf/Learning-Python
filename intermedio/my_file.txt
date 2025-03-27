@@ -1,0 +1,6 @@
+Mi nombre es Victoria
+Mi apellido es Parra
+23 años
+Y mi lenguaje preferido es Python
+Aunque también me gusta Kotlin
+Y Swift
