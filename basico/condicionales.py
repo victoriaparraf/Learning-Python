@@ -1,34 +1,66 @@
-#Condicionales
-if 5 > 2:
-    print("5 es mayor que 2")
+# Condicionales en Python
+
+# if simple
+edad = 18
+if edad >= 18:
+    print("Eres mayor de edad")
+
+# if-else
+nota = 6
+if nota >= 5:
+    print("Aprobado")
 else:
-    print("5 no es mayor que 2")
+    print("Reprobado")
 
-if 'hola' == 'hola' and 5 > 2:
-    print("Ambas condiciones son verdaderas")
+# if-elif-else
+calificacion = 8
+if calificacion >= 9:
+    print("Excelente")
+elif calificacion >= 7:
+    print("Bueno")
+elif calificacion >= 5:
+    print("Regular")
 else:
-    print("Alguna de las condiciones no se cumple")
+    print("Insuficiente")
 
-if len('hola') == 4 or 5 > 2:
-    print("Al menos una de las condiciones es verdadera")
-elif 5 > 2:
-    print("5 es mayor que 2")
+# Condicionales anidados
+numero = 15
+if numero > 0:
+    if numero % 2 == 0:
+        print("Número positivo y par")
+    else:
+        print("Número positivo e impar")
 else:
-    print("5 no es mayor que 2")
+    print("Número no positivo")
 
-#bucles
-i = 1
-while i < 6:
-    print(i)
-    i += 1
-    if i == 3:
-        print("i es igual a 3")
-        break
-    
+# Uso de operadores lógicos
+usuario = "admin"
+contrasena = "1234"
+if usuario == "admin" and contrasena == "1234":
+    print("Acceso concedido")
+else:
+    print("Acceso denegado")
 
-#bucle for
-frutas = ["manzana", "banana", "cereza"]
-for x in frutas:
-    print(x)
-    if x == "banana":
-        break
+# Uso de 'or'
+edad = 65
+if edad < 18 or edad >= 60:
+    print("Tienes descuento")
+else:
+    print("Precio completo")
+
+# Uso de 'not'
+está_lloviendo = False
+if not está_lloviendo:
+    print("Puedes salir sin paraguas")
+
+# Operador ternario
+numero = 7
+par_o_impar = "Par" if numero % 2 == 0 else "Impar"
+print(f"El número es {par_o_impar}")
+
+# Comparación de múltiples valores
+color = "rojo"
+if color in ["rojo", "azul", "verde"]:
+    print("Color permitido")
+else:
+    print("Color no permitido")
