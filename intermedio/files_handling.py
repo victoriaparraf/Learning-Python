@@ -93,5 +93,3 @@ with open("my_file.csv") as my_other_file:
 # import xlrd # Debe instalarse el módulo
 
 # .xml file
-
-# ¿Te atreves a practicar cómo trabajar con este tipo de ficheros?
